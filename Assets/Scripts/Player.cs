@@ -1,35 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Core.BasicInput;
+using Core.Movements;
 
-public class Player : MonoBehaviour
+public class Player : NPC
 {
-    [SerializeField, Range(0.1f, 10f)] //Range(-10f, 10f)
-    float moveSpeed = 3f;
-
-    Animator animator;
-    SpriteRenderer spriteRenderer;
-    bool moving;
-
-    void Awake(){
-        animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+    [SerializeField]
+    bool isNPC;
+    [SerializeField]
+    bool isLeader;
 
     void Update()
     {
-        //Axis es la direccion en que se mueve
-        Vector2 axis = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        transform.Translate(axis * moveSpeed * Time.deltaTime);
-        moving = axis != Vector2.zero;
+        Movement();
+        base.Update();
+    }
 
-        if(moving){
-            animator.SetFloat("move-X", axis.x);
-            animator.SetFloat("move-Y", axis.y);
+    public override void Movement()
+    {
+        if(!isNPC)
+        {
+            Movements.PlayerBasicMovement(transform, BasicInput.AxisNormDeltaTime, moveSpeed);
+            moving = BasicInput.AxisNormalized != Vector2.zero;
         }
+        else
+        {
+            base.Movement();
+        }
+    }
 
-        animator.SetBool("moving", moving);
+    public bool IsLeader
+    {
+        get => isLeader;
+        set => isLeader = value;
+    }
 
-        spriteRenderer.flipX = axis.x < 0 ? true : axis.x > 0 ? false : spriteRenderer.flipX;
+    public bool IsNPC
+    {
+        get => isNPC;
+        set => isNPC = value;
     }
 }

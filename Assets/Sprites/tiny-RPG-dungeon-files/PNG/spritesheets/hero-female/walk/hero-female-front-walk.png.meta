@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b116b0a94e33a7d4ca280e1ce2248dae
+guid: f0a436dd59ecd684d86f5ea42940025c
 TextureImporter:
   fileIDToRecycleName:
     21300000: hero-female-front-walk_0
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,7 +104,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff60dd7b6dfbb7d43aa34c2651055dd2
+      spriteID: e7563f5faf36284478143af5ab2675ee
       vertices: []
       indices: 
       edges: []
@@ -124,7 +124,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2beb3e8dae7566b4b8f99a5032c98a84
+      spriteID: f0480fcc0aed460499a63a95c808f05b
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab02223e3c3fe9d419726a53df52701f
+      spriteID: 058fb8ac564e35f46bb82079382a7acc
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30047089aad8ebc418c844664dff240d
+      spriteID: dc5308c10ef8ad14190a3582de6575fa
       vertices: []
       indices: 
       edges: []
@@ -184,7 +184,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4236bbcf6c6edc45a9470d1afeaf9ee
+      spriteID: d91a9df2c43f0c14b94ff06709a19521
       vertices: []
       indices: 
       edges: []
@@ -204,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6186bbffc602f0447a81bcc44df73ad9
+      spriteID: d5dcfcf306f2e434685119b03b9f789c
       vertices: []
       indices: 
       edges: []
@@ -212,7 +212,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 100ddc6c88eda204a89cfb3bf7153c7a
+    spriteID: 5e97eb03825dee720800000000000000
     vertices: []
     indices: 
     edges: []
